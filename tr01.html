@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Ventana</title>
+</head>
+<body>
+  <div class="">
+    <button onclick="redirigirAIndex()">Home</button>
+  </div>
+  <a href="#" id="link">Verificar ventana</a>
+
+    <script type="text/javascript">
+        // Variable que mantendrá la referencia a la nueva ventana
+        var nuevaVentana;
+
+        // Función que se ejecuta al cargar la página
+        window.onload = function() {
+            // Abre una nueva ventana con el archivo ejemplo1.html
+            nuevaVentana = window.open('ejemplo1.html');
+        }
+        // Obtén una referencia al enlace y añade un oyente de eventos para el clic
+        document.getElementById('link').addEventListener('click', function() {
+            // Verifica si la nueva ventana está cerrada o aún abierta
+            if (nuevaVentana.closed) {
+                alert('La ventana YA SE CERRÓ');
+            } else {
+                alert('La ventana sigue abierta');
+            }
+        });
+    </script>
+    <script src="./BtnComm.js"></script>
+
+</body>
+</html>
