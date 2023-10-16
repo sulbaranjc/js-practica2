@@ -1,4 +1,8 @@
 .cardPreguntas{
     width: 400px;
-    height: 250px;
+    height: 280px;
 }
+
+#boton1 { background-color: red; }
+#boton2 { background-color: green; }
+#boton3 { background-color: blue; }
