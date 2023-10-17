@@ -6,3 +6,9 @@
 #boton1 { background-color: red; }
 #boton2 { background-color: green; }
 #boton3 { background-color: blue; }
+
+td img {
+    width: 50%;
+    height: 50%;
+    display: block;
+}
